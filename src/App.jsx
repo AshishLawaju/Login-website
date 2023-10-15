@@ -84,7 +84,6 @@ export default function App() {
 
   return (
     <>
-      {" "}
       <main className=" opacity-90 h-[100vh]">
         <section>
           {/* <div style={{backgroundImage:`url(${backg})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}} className="w-full h-[100vh] bg-gradient-to-r from-purple-500 to-pink-500 opacity-90">This is div</div> */}
@@ -114,9 +113,21 @@ export default function App() {
                       </button>
                     </div>
                   </div>
-
-                  <div className="w-[60vw]   ml-[20%] h-[100vh] absolute top-0 ">
-                    <Swip></Swip>
+                  <div className="flex">
+                    <div className="mt-48 ml-12">
+                      <ul className="text-white border border-white p-4">
+                        <li className="bg-yellow-200 active:bg-blue-600">
+                          {" "}
+                          <a href="#">Home</a>{" "}
+                        </li>
+                        <li>About</li>
+                        <li>Portfolio</li>
+                        <li>Service</li>
+                      </ul>
+                    </div>
+                    <div className="w-[75vw]   ml-[20%] h-[100vh] absolute top-0 ">
+                      <Swip></Swip>
+                    </div>
                   </div>
                 </div>
               </div>
