@@ -37,29 +37,24 @@ const Testimonials = () => {
         className="mySwiper1 w-[88%] pl-16 pt-12"
       >
         <SwiperSlide className="swiper-slide1  mr-14  bg-black rounded-3xl">
-          <Card />
+          <Card
+            name={"Kamlesh Shrestha"}
+            review={`"They have done an absoutely great job for my company's logo design. Professional and really passionate."`}
+            profile={"https://logindesigns.com/admin/files/16004856930.webp"}
+          />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide1  mr-14  bg-black rounded-3xl">
-          <Card />
+          <Card name={"Suraj Jung Thapa"}  review={` "You gurs made it so simple. My new site is just visual pleasing. Just
+        Yesterday some of my customers messaged sayinng how much I liked the new
+        site. Thanks guys!" `} profile={"https://logindesigns.com/admin/files/16005130380.webp"}/>
         </SwiperSlide>
         <SwiperSlide className="swiper-slide1  mr-14  bg-black rounded-3xl">
-          <Card />
+          <Card name={"Puspha Uparkoti"} review={`40% increase in site visits and 17% increase in sales. In just 2 months. What a turnaround." `} profile={"https://logindesigns.com/admin/files/16005871190.webp"}/>
         </SwiperSlide>
         <SwiperSlide className="swiper-slide1  mr-14  bg-black rounded-3xl">
-          <Card />
+          <Card name={"Yugesh Chaudhary"} review={`Choosing your service for us is best Responsibility for clinet statisfaction is great! Very responsible. Very helpful very suggestive team."`} profile={"https://logindesigns.com/admin/files/16076562500.webp"} />
         </SwiperSlide>
-        <SwiperSlide className="swiper-slide1  mr-14  bg-black rounded-3xl">
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide1  mr-14  bg-black rounded-3xl">
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide1  mr-14  bg-black rounded-3xl">
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide1  mr-14  bg-black rounded-3xl">
-          <Card />
-        </SwiperSlide>
+       
       </Swiper>
     </div>
   );
