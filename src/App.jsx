@@ -105,6 +105,8 @@ export default function App() {
   const [isActiveTestimonials, setIsActiveTestomonials] = useState(false);
   const [isActiveContact, setIsActiveContact] = useState(false);
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <>
       <main className=" opacity-90 h-[100vh]">
@@ -146,21 +148,23 @@ export default function App() {
                     />
                   </div>
 
-                  <nav className="">
+                  <nav className="sidebar">
                     <div className="">
                       <div className="mt-48 ml-12 max-sm:max-md:hidden ">
                         <ul className="text-slate-400  p-4 flex flex-col gap-6">
                           <li>
                             <a
                               href="#home"
-                              className={isActiveHome ? "active" : ""}
-                              onClick={() => {
-                                setIsActiveHome(true);
-                                setIsActiveAbout(false);
-                                setIsActiveService(false);
-                                setIsActiveTestomonials(false);
-                                setIsActiveContact(false);
-                              }}
+                              className={activeIndex === 0 ? "active" : ""}
+                              // onClick={() => {
+                              //   if (activeIndex === 0) {
+                              //     setIsActiveHome(true);
+                              //     setIsActiveAbout(false);
+                              //     setIsActiveService(false);
+                              //     setIsActiveTestomonials(false);
+                              //     setIsActiveContact(false);
+                              //   }
+                              // }}
                             >
                               Home
                             </a>
@@ -168,14 +172,16 @@ export default function App() {
                           <li>
                             <a
                               href="#about "
-                              className={isActiveAbout ? "active" : ""}
-                              onClick={() => {
-                                setIsActiveHome(false);
-                                setIsActiveAbout(true);
-                                setIsActiveService(false);
-                                setIsActiveTestomonials(false);
-                                setIsActiveContact(false);
-                              }}
+                              className={activeIndex === 1 ? "active" : ""}
+                              // onClick={() => {
+                              //   if (activeIndex === 1) {
+                              //     setIsActiveHome(false);
+                              //     setIsActiveAbout(true);
+                              //     setIsActiveService(false);
+                              //     setIsActiveTestomonials(false);
+                              //     setIsActiveContact(false);
+                              //   }
+                              // }}
                             >
                               About
                             </a>
@@ -183,13 +189,15 @@ export default function App() {
                           <li>
                             <a
                               href="#service"
-                              className={isActiveService ? "active" : ""}
+                              className={activeIndex === 2 ? "active" : ""}
                               onClick={() => {
-                                setIsActiveHome(false);
-                                setIsActiveAbout(false);
-                                setIsActiveService(true);
-                                setIsActiveTestomonials(false);
-                                setIsActiveContact(false);
+                                // if (activeIndex === 2) {
+                                //   setIsActiveHome(false);
+                                //   setIsActiveAbout(false);
+                                //   setIsActiveService(true);
+                                //   setIsActiveTestomonials(false);
+                                //   setIsActiveContact(false);
+                                // }
                               }}
                             >
                               Service
@@ -198,14 +206,16 @@ export default function App() {
                           <li>
                             <a
                               href="#testimonials"
-                              className={isActiveTestimonials ? "active" : ""}
-                              onClick={() => {
-                                setIsActiveHome(false);
-                                setIsActiveAbout(false);
-                                setIsActiveService(false);
-                                setIsActiveTestomonials(true);
-                                setIsActiveContact(false);
-                              }}
+                              className={activeIndex === 3 ? "active" : ""}
+                              // onClick={() => {
+                              //   if (activeIndex === 3) {
+                              //     setIsActiveHome(false);
+                              //     setIsActiveAbout(false);
+                              //     setIsActiveService(false);
+                              //     setIsActiveTestomonials(true);
+                              //     setIsActiveContact(false);
+                              //   }
+                              // }}
                             >
                               Testimonials
                             </a>
@@ -213,14 +223,16 @@ export default function App() {
                           <li>
                             <a
                               href="#customer"
-                              className={isActiveContact ? "active" : ""}
-                              onClick={() => {
-                                setIsActiveHome(false);
-                                setIsActiveAbout(false);
-                                setIsActiveService(false);
-                                setIsActiveTestomonials(false);
-                                setIsActiveContact(true);
-                              }}
+                              className={activeIndex === 4 ? "active" : ""}
+                              // onClick={() => {
+                              //   if (activeIndex === 4) {
+                              //     setIsActiveHome(false);
+                              //     setIsActiveAbout(false);
+                              //     setIsActiveService(false);
+                              //     setIsActiveTestomonials(false);
+                              //     setIsActiveContact(true);
+                              //   }
+                              // }}
                             >
                               Contact
                             </a>
@@ -229,7 +241,10 @@ export default function App() {
                       </div>
 
                       <div className="w-[75vw]   ml-[20%] h-[100vh] absolute top-0 ">
-                        <Swip></Swip>
+                        <Swip
+                          activeIndex={activeIndex}
+                          setActiveIndex={setActiveIndex}
+                        ></Swip>
                       </div>
                     </div>
                   </nav>

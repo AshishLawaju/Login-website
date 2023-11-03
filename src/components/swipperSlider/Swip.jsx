@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,10 +19,14 @@ import { NavLink } from "react-router-dom";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import Card from "../slideSection/Card";
 
-export default function App() {
+export default function Swip({activeIndex,setActiveIndex}) {
+  console.log(activeIndex)
   return (
+    
     <>
       <Swiper
+
+      onActiveIndexChange={(element)=>{setActiveIndex(element.activeIndex)}}
         direction={"vertical"}
         cssMode={true}
         navigation={true}
@@ -49,7 +54,7 @@ export default function App() {
           <section className="max-sm:mt-[60%]">
             <div
               className="w-full h-[100vh]"
-              onMouseEnter={() => pageHandler(2)}
+              
             >
               <div className="mt-[52%] mr-[18%]">
                 <h1 className="text-4xl text-white font-bold  z-50 ">
