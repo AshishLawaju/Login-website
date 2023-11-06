@@ -99,11 +99,11 @@ export default function App() {
 
   // console.log(page);
 
-  const [isActiveHome, setIsActiveHome] = useState(true);
-  const [isActiveAbout, setIsActiveAbout] = useState(false);
-  const [isActiveService, setIsActiveService] = useState(false);
-  const [isActiveTestimonials, setIsActiveTestomonials] = useState(false);
-  const [isActiveContact, setIsActiveContact] = useState(false);
+  // const [isActiveHome, setIsActiveHome] = useState(true);
+  // const [isActiveAbout, setIsActiveAbout] = useState(false);
+  // const [isActiveService, setIsActiveService] = useState(false);
+  // const [isActiveTestimonials, setIsActiveTestomonials] = useState(false);
+  // const [isActiveContact, setIsActiveContact] = useState(false);
 
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -135,7 +135,7 @@ export default function App() {
                         />
                       </div>
 
-                      <button className="border-2 border-[#ffffff] rounded-full text-white  pr-3.5  pl-3.5 hover:text-[#ffffff75] hover:border-[#ffffff75] text-lg leading-normal mt-5 mb-5 mr-12  max-sm:max-md:hidden">
+                      <button className="border-2 border-[#ffffff] rounded-full cursor-pointer text-white  pr-3.5  pl-3.5 hover:text-[#ffffff75] hover:border-[#ffffff75] text-lg leading-normal mt-5 mb-5 mr-12  max-sm:max-md:hidden">
                         Our Team
                       </button>
                     </div>

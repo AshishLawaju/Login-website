@@ -16,24 +16,26 @@ import Testimonials from "../slideSection/Testomonial/Testimonials";
 import { NavLink } from "react-router-dom";
 
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import { Navigation, Pagination, Mousewheel, Keyboard, Scrollbar } from "swiper/modules";
 import Card from "../slideSection/Card";
 
-export default function Swip({activeIndex,setActiveIndex}) {
-  console.log(activeIndex)
+export default function Swip({ activeIndex, setActiveIndex }) {
+  console.log(activeIndex);
   return (
-    
     <>
       <Swiper
-
-      onActiveIndexChange={(element)=>{setActiveIndex(element.activeIndex)}}
+        onActiveIndexChange={(element) => {
+          setActiveIndex(element.activeIndex);
+        }}
         direction={"vertical"}
         cssMode={true}
         navigation={true}
         pagination={true}
         mousewheel={true}
         keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        // scrollbar={{ draggable: true }}
+
+        modules={[Navigation, Pagination, Mousewheel, Keyboard ]}
         className="mySwiper w-full "
       >
         <SwiperSlide id="home" className="">
@@ -52,10 +54,7 @@ export default function Swip({activeIndex,setActiveIndex}) {
         </SwiperSlide>
         <SwiperSlide id="about">
           <section className="max-sm:mt-[60%]">
-            <div
-              className="w-full h-[100vh]"
-              
-            >
+            <div className="w-full h-[100vh]">
               <div className="mt-[52%] mr-[18%]">
                 <h1 className="text-4xl text-white font-bold  z-50 ">
                   WHO ARE WE?
