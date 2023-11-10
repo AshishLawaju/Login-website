@@ -1,3 +1,4 @@
+import Particle from "../../Particle";
 
 export default function Team1() {
   return (

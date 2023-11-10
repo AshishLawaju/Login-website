@@ -16,3 +16,9 @@ nav a.active ,nav a:hover{
   color: #fff;
   transition: .5s;
 }
+
+nav div.active , nav div:hover{
+  color: #fff;
+  transition: .5s;
+
+}

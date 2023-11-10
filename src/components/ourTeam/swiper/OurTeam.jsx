@@ -14,8 +14,11 @@ import Team2 from "./Team2";
 import Team3 from "./Team3";
 import Team4 from "./Team4";
 import Team5 from "./Team5";
+import { useNavigate } from "react-router-dom";
+import Particle from "../../Particle";
 
 export default function OurTeam() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="relative h-screen bg-gradient-to-r from-indigo-700 opacity-75 to-pink-700 from">
@@ -31,7 +34,11 @@ export default function OurTeam() {
                   className=" sm:mt-6 sm:ml-16 max-sm:mt-8 max-sm:ml-8"
                 />
               </div>
-              <button className="border-2 border-[#ffffff] rounded-full cursor-pointer text-white  pr-3.5  pl-3.5 hover:text-[#ffffff75] hover:border-[#ffffff75] text-lg leading-normal mt-5 mb-5 mr-12  max-sm:max-md:hidden">
+
+              <button
+                onClick={() => navigate("/")}
+                className="absolute right-2 z-50 border-2 border-[#ffffff] rounded-full cursor-pointer text-white  pr-3.5  pl-3.5 hover:text-[#ffffff75] hover:border-[#ffffff75] text-lg leading-normal mt-5 mb-5 mr-12  max-sm:max-md:hidden"
+              >
                 Home
               </button>
             </div>
@@ -59,9 +66,10 @@ export default function OurTeam() {
                 <Team5 />
               </SwiperSlide>
             </Swiper>
+            <Particle/>
           </div>
         </div>
-      </div>{" "}
+      </div>
     </>
   );
 }
