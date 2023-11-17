@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,6 +20,41 @@ nav a.active ,nav a:hover{
 
 nav div.active , nav div:hover{
   color: #fff;
-  transition: .5s;
+  transition: .6s;
 
+}
+
+
+
+.swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets{
+
+  
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap:0.2rem
+
+
+}
+
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet{
+  background-color: white;
+ 
+}
+
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet-active{
+ 
+  width: 5px;
+  height:5px;
+  transition: ease-in-out 0.02s;
+
+}
+.swiper-pagination-bullet-active{
+
+  
+  border: 4px solid rgba(171, 107, 107, 0.996);
+
+ padding: 4px;
+  /* transition: ease-out 0.1s; */
 }

@@ -1,12 +1,11 @@
-import React from "react";
 
 const Customer = () => {
   return (
     <>
-      <div className=" h-[100vh] w-full">
+      <div className=" h-[100vh] w-full ">
         <div className="text-left text-white mr-[18%]  mt-[12%] md:max-lg:mt-[22%] max-sm:mt-[50%]">
           <h3 className="text-xl">Customer service</h3>
-          <h2 className="text-4xl mt-4">CUSTOMER</h2>
+          <h2 className="text-4xl mt-4 ">CUSTOMER</h2>
           <p className="mr-12 text-stone-300 mt-4 max-sm:mt-2">
             Feel free to reach out to us with any questions. <br/> We are very
             friendly and always open to <br/> discussing new projects, interesting

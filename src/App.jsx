@@ -5,11 +5,10 @@ import Swip from "./components/swipperSlider/Swip";
 import { NavLink, Navigate, useNavigate } from "react-router-dom";
 import Services from "./components/slideSection/Services";
 import menus from "./assets/menus.png";
-import { RxHamburgerMenu } from "react-icons/rx";
 import bg1 from "./assets/bg1.jpg";
-import { Icon } from "@iconify/react";
 import Footer from "./components/Footer";
-import WebXLogo from "./assets/WhiteWebX.png"
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 export default function App() {
   const slides = [
     {
@@ -110,11 +109,10 @@ export default function App() {
   // const [isActiveContact, setIsActiveContact] = useState(false);
 
   const [activeIndex, setActiveIndex] = useState(0);
-  const navigate = useNavigate();
 
   return (
     <>
-      <main className=" opacity-90 h-[100vh]">
+      <main className="  h-[100vh]">
         <section>
           {/* <div style={{backgroundImage:`url(${backg})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}} className="w-full h-[100vh] bg-gradient-to-r from-purple-500 to-pink-500 opacity-90">This is div</div> */}
 
@@ -124,195 +122,22 @@ export default function App() {
             > */}
             <div
               style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-              className="w-[100vw] h-[100vh]   bg-center bg-cover ease-in-out duration-500 bg-fixed absolute top-0 bottom-0 right-0 left-0"
+              className="w-[100vw] h-[100vh]   bg-center bg-cover ease-in-out duration-500 bg-fixed relative "
             >
-              <div className="relative h-screen bg-gradient-to-r from-indigo-700 opacity-75 to-pink-700 from">
-                <div className="relative h-screen bg-black/30 ">
-                  <div className="nav">
-                    <div className="flex justify-between ">
-                      <div className="max-sm:max-md:w-20 max-sm:max-md:ml-0  max-sm:max-md:absolute top-0 ">
-                        <img
-                          src={WebXLogo}
-                          alt="logo"
-                          width={120}
-                          height={100}
-                          onClick={() => navigate("/")}
-                          className=" sm:mt-6 sm:ml-16 max-sm:mt-8 max-sm:ml-8"
-                        />
-                      </div>
-
-                      <button
-                        onClick={() => navigate("/ourteam")}
-                        className="border-2 z-50 border-[#ffffff] rounded-full cursor-pointer text-white  pr-3.5  pl-3.5 hover:text-[#ffffff75] hover:border-[#ffffff75] text-lg leading-normal mt-5 mb-5 mr-12  max-sm:max-md:hidden"
-                      >
-                        Our Team
-                      </button>
-                    </div>
-
-                    <div></div>
-                    {/* <img
-                      src={RxHamburgerMenu}
-                      alt="hamburger"
-                      width={30}
-                      height={120}
-                      className="max-sm:absolute max-sm:max-lg:right-5 max-sm:max-lg:top-8 sm:hidden   "
-                    /> */}
-
-                    <div className="max-sm:absolute max-sm:max-lg:right-5 max-sm:max-lg:top-8 sm:hidden    ">
-                      <RxHamburgerMenu color="white" width={200} height={200} />
-                    </div>
-                  </div>
-
-                  <nav className="sidebar">
-                    <div className="">
-                      <div className="mt-48 ml-12 max-sm:max-md:hidden ">
-                        <ul className="text-slate-400  p-4 flex flex-col gap-6">
-                          <li className="flex items-center gap-2 ">
-                            <div
-                              className={`  rounded-full p-2  ${
-                                activeIndex === 0 ? "bg-white/40" : "bg-white/20"
-                              }`}
-                            >
-                              <Icon icon="ion:home" color="white" />
-                            </div>
-                            <a
-                              href="#home"
-                              className={activeIndex === 0 ? "active" : ""}
-                              // onClick={() => {
-                              //   if (activeIndex === 0) {
-                              //     setIsActiveHome(true);
-                              //     setIsActiveAbout(false);
-                              //     setIsActiveService(false);
-                              //     setIsActiveTestomonials(false);
-                              //     setIsActiveContact(false);
-                              //   }
-                              // }}
-                            >
-                              Home
-                            </a>
-                          </li>
-                          <li className="flex items-center gap-2">
-                            <div className={`bg-white/20 rounded-full  ${
-                                activeIndex === 1 ? "bg-white/40" : "bg-white/20"
-                              }`}>
-                              <Icon
-                                icon="mdi:about-variant"
-                                width={30}
-                                color="white"
-                              />{" "}
-                            </div>
-                            <a
-                              href="#about "
-                              className={activeIndex === 1 ? "active" : ""}
-                              // onClick={() => {
-                              //   if (activeIndex === 1) {
-                              //     setIsActiveHome(false);
-                              //     setIsActiveAbout(true);
-                              //     setIsActiveService(false);
-                              //     setIsActiveTestomonials(false);
-                              //     setIsActiveContact(false);
-                              //   }
-                              // }}
-                            >
-                              About
-                            </a>
-                          </li>
-                          <li className="flex items-center gap-2">
-                            <div className={`bg-white/20 rounded-full p-1  ${
-                                activeIndex === 2 ? "bg-white/40" : "bg-white/20"
-                              }`} >
-                              <Icon
-                                icon="eos-icons:service"
-                                width={24}
-                                color="white"
-                              />{" "}
-                            </div>
-                            <a
-                              href="#service"
-                              className={activeIndex === 2 ? "active" : ""}
-                              onClick={() => {
-                                // if (activeIndex === 2) {
-                                //   setIsActiveHome(false);
-                                //   setIsActiveAbout(false);
-                                //   setIsActiveService(true);
-                                //   setIsActiveTestomonials(false);
-                                //   setIsActiveContact(false);
-                                // }
-                              }}
-                            >
-                              Service
-                            </a>
-                          </li>
-                          <li className="flex items-center gap-2">
-                            <div className={`bg-white/20 rounded-full  p-1.5 ${
-                                activeIndex === 3 ? "bg-white/40" : "bg-white/20"
-                              }`} >
-                              <Icon
-                                icon="ri:user-voice-fill"
-                                width={20}
-                                color="white"
-                              />{" "}
-                            </div>
-                            <a
-                              href="#testimonials"
-                              className={activeIndex === 3 ? "active" : ""}
-                              // onClick={() => {
-                              //   if (activeIndex === 3) {
-                              //     setIsActiveHome(false);
-                              //     setIsActiveAbout(false);
-                              //     setIsActiveService(false);
-                              //     setIsActiveTestomonials(true);
-                              //     setIsActiveContact(false);
-                              //   }
-                              // }}
-                            >
-                              Testimonials
-                            </a>
-                          </li>
-                          <li className="flex items-center gap-2">
-                            <div className={`bg-white/20 rounded-full p-2 ${
-                                activeIndex === 4 ? "bg-white/40" : "bg-white/20"
-                              }`}>
-                              <Icon
-                                icon="ion:call-sharp"
-                                width={16}
-                                color="white"
-                              />{" "}
-                            </div>
-                            <a
-                              href="#customer"
-                              className={activeIndex === 4 ? "active" : ""}
-                              // onClick={() => {
-                              //   if (activeIndex === 4) {
-                              //     setIsActiveHome(false);
-                              //     setIsActiveAbout(false);
-                              //     setIsActiveService(false);
-                              //     setIsActiveTestomonials(false);
-                              //     setIsActiveContact(true);
-                              //   }
-                              // }}
-                            >
-                              Contact
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div className="w-[75vw]   ml-[20%] h-[100vh] absolute top-0 ">
-                        <Swip
-                          activeIndex={activeIndex}
-                          setActiveIndex={setActiveIndex}
-                        ></Swip>
-                      </div>
-                    </div>
-                  </nav>
+              <div className=" h-screen w-full bg-gradient-to-r from-indigo-700 opacity-80 to-pink-700   ">
+                <div className="absolute w-full opacity-100 h-screen bg-black/30 ">
+                  <Navbar />
+                  <Sidebar
+                    activeIndex={activeIndex}
+                    setActiveIndex={setActiveIndex}
+                  />
                 </div>
               </div>
             </div>
           </div>
         </section>
         <Particle />
-        <Footer/>
+        <Footer />
       </main>
       {/* <Navbar></Navbar>? */}
     </>

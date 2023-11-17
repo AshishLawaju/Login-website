@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import Page1 from "./Page1";
 import { useState } from "react";
 import App from "../../App"
-export default function First() {
+export default function First({audio}) {
 
     const [show, setShow] = useState(true);
 
@@ -10,8 +11,8 @@ export default function First() {
     }, 9000);
   return (
     <>
-    {show && <Page1 />}
-      {!show && <App />}
+    {show && <Page1 audio={audio}/>}
+      {!show && <App audio={audio}/>}
     </>
   )
 }

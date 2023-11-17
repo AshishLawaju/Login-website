@@ -19,13 +19,30 @@ import { NavLink } from "react-router-dom";
 import { Navigation, Pagination, Mousewheel, Keyboard, Scrollbar } from "swiper/modules";
 import Card from "../slideSection/Card";
 
-export default function Swip({ activeIndex, setActiveIndex }) {
-  console.log(activeIndex);
+export default function Swip({audio, activeIndex, setActiveIndex }) {
+ 
+  const background = new Audio("/src/assets/sounds/background.mp3")
+  
+  
+  
+    
+  
+  useEffect(()=>{
+    const prevInd = activeIndex;
+  const slideGem = new Audio("/src/assets/sounds/slideGem.mp3")
+  if(prevInd === activeIndex && audio){
+    slideGem.play()
+  }
+  
+},[activeIndex, audio])
+
+  
   return (
     <>
       <Swiper
         onActiveIndexChange={(element) => {
           setActiveIndex(element.activeIndex);
+      
         }}
         direction={"vertical"}
         cssMode={true}

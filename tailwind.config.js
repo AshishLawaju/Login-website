@@ -4,7 +4,11 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
   theme: {
+    fontFamily:{
+      'poppins': ['Poppins', 'sans-serif']
+    },
     extend: {
       backgroundImage: {
       back1:"url(/src/assets/img1.jpg)",
