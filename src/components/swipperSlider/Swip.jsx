@@ -16,8 +16,9 @@ import Testimonials from "../slideSection/Testomonial/Testimonials";
 import { NavLink } from "react-router-dom";
 
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard, Scrollbar } from "swiper/modules";
+import { Navigation, Pagination, Mousewheel, Keyboard, Scrollbar, FreeMode, EffectFade, EffectCube, Parallax } from "swiper/modules";
 import Card from "../slideSection/Card";
+import { Fade } from "react-reveal";
 
 export default function Swip({audio, activeIndex, setActiveIndex }) {
  
@@ -48,15 +49,24 @@ export default function Swip({audio, activeIndex, setActiveIndex }) {
         cssMode={true}
         navigation={true}
         pagination={true}
-        mousewheel={true}
         keyboard={true}
+        
+        parallax={true}
+
+        speed={1000}
+
+       effect={EffectFade}
+        
+       
+  loopPreventsSliding={true}
+        
         // scrollbar={{ draggable: true }}
 
-        modules={[Navigation, Pagination, Mousewheel, Keyboard ]}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard,EffectFade,Parallax]}
         className="mySwiper w-full "
       >
         <SwiperSlide id="home" className="">
-          <section className="text-white">
+          <section className="text-white delay-1000">
             <div className=" w-full h-[100vh]  ">
               <div className="mt-[50%] mr-[18%]  max-sm:mt-[120%]  max-sm:left-3">
                 <h1 className="text-4xl font-bold max-md:text-2xl max-sm:text-center ">
@@ -70,7 +80,7 @@ export default function Swip({audio, activeIndex, setActiveIndex }) {
           </section>
         </SwiperSlide>
         <SwiperSlide id="about">
-          <section className="max-sm:mt-[60%]">
+          <section className="max-sm:mt-[60%] delay-1000 translate-y-10 ease-in">
             <div className="w-full h-[100vh]">
               <div className="mt-[52%] mr-[18%]">
                 <h1 className="text-4xl text-white font-bold  z-50 ">

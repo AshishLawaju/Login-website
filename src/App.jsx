@@ -9,7 +9,7 @@ import bg1 from "./assets/bg1.jpg";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-export default function App() {
+export default function App({audio}) {
   const slides = [
     {
       // url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
@@ -127,7 +127,7 @@ export default function App() {
               <div className=" h-screen w-full bg-gradient-to-r from-indigo-700 opacity-80 to-pink-700   ">
                 <div className="absolute w-full opacity-100 h-screen bg-black/30 ">
                   <Navbar />
-                  <Sidebar
+                  <Sidebar audio={audio}
                     activeIndex={activeIndex}
                     setActiveIndex={setActiveIndex}
                   />
