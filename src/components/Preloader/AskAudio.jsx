@@ -1,18 +1,22 @@
 import { useState } from "react";
-import First from "./First";
+import Story from "./Story";
 
+
+import { useNavigate } from "react-router-dom";
 export default function AskAudio() {
   const [audio, setAudio] = useState(null);
 
   const [preAudio, setPreAudio] = useState(true);
-  const [loadFirst, setLoadFirst] = useState(false);
+  
+  const [story,setStory] = useState(false)
 
-  console.log("you audio is", audio);
+  const navigate = useNavigate()
+
   return (
     <>
       {preAudio && (
         <div className="relative text-white bg-black w-full h-[100vh]">
-          <div className="relative  h-[100vh] w-[80vw]  pl-36 flex  items-center">
+          <div className="relative  h-[100vh] w-[80vw]   pl-36 max-sm:pl-10 flex  items-center">
             <div className="  h-[150px] grid  ">
               <div className="capitalize text-2xl">Hello, welcome to webX !</div>
               <div className="text-md">
@@ -20,12 +24,13 @@ export default function AskAudio() {
               </div>
 
               <div className="flex items-center gap-8">
-                <p>--------------------</p>
+                <p>------------------</p>
                 <button
                   onClick={() => {
                     setAudio(true);
                     setPreAudio(false);
-                    setLoadFirst(true);
+                    
+                    setStory(true)
                   }}
                 >
                   Yes Please !
@@ -34,7 +39,8 @@ export default function AskAudio() {
                   onClick={() => {
                     setAudio(false);
                     setPreAudio(false);
-                    setLoadFirst(true);
+                    // setLoadFirst(true);
+                    navigate("/home")
                   }}
                 >
                   No !
@@ -45,7 +51,8 @@ export default function AskAudio() {
         </div>
       )}
 
-      {loadFirst && <First audio={audio} />}
+      {story && <Story />}
+      {/* {loadFirst && <App audio={audio} />} */}
     </>
   );
 }

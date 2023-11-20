@@ -1,10 +1,11 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+
 
 const Card = ({name,review,profile}) => {
 
 
   return (
-    <div className="w-[290px] h-[280px] text-white     flex flex-col  items-center z-50  ">
+    <div className="w-[290px] h-[280px] text-white     flex flex-col  items-center z-50  bg-black/70 rounded-xl  ">
       <div className="w-[100px] h-[100px]  ">
         <img
           src={profile}

@@ -5,27 +5,27 @@ export default function Sidebar({ audio,activeIndex, setActiveIndex }) {
   return (
     <nav className="sidebar  ">
       <div className="">
-        <div className="mt-48 ml-12 max-sm:max-md:hidden ">
+        <div className="mt-48 ml-12 max-md:hidden  ">
           <ul className="text-slate-400  p-6 flex flex-col gap-6 w-12 border border-slate-300 items-center justify-center rounded-full">
             <li className=" items-center  ">
               <div
                 className={`  rounded-full   ${activeIndex === 0 ? "" : ""}`}
               ></div>
-              <a href="#home" className={activeIndex === 0 ? "active" : ""}>
-                <Icon icon="ic:outline-home" width={25} />
+              <a title="Home" href="#home" className={activeIndex === 0 ? "active" : ""}>
+                <Icon  icon="ic:outline-home" width={25} />
               </a>
             </li>
             <li className="">
               <div
                 className={` rounded-full  ${activeIndex === 1 ? "" : ""}`}
               ></div>
-              <a href="#about " className={activeIndex === 1 ? "active" : ""}>
+              <a title="About" href="#about " className={activeIndex === 1 ? "active" : ""}>
                 <Icon icon="octicon:person-24" width={21} />
               </a>
             </li>
             <li className="flex items-center ">
               <div></div>
-              <a
+              <a title="Service"
                 href="#service"
                 className={activeIndex === 2 ? "active" : ""}
                 onClick={() => {}}
@@ -35,7 +35,7 @@ export default function Sidebar({ audio,activeIndex, setActiveIndex }) {
             </li>
             <li className="">
               <div className={`  ${activeIndex === 3 ? "" : ""}`}></div>
-              <a
+              <a title="Testimonials"
                 href="#testimonials"
                 className={activeIndex === 3 ? "active" : ""}
               >
@@ -44,14 +44,14 @@ export default function Sidebar({ audio,activeIndex, setActiveIndex }) {
             </li>
             <li className="">
               <div className={` ${activeIndex === 4 ? "" : ""}`}></div>
-              <a href="#customer" className={activeIndex === 4 ? "active" : ""}>
+              <a title="Customer" href="#customer" className={activeIndex === 4 ? "active" : ""}>
                 <Icon icon="mdi:envelope-outline" width={21} />
               </a>
             </li>
           </ul>
         </div>
 
-        <div className="w-[75vw]   ml-[20%] h-[100vh] absolute top-0 ">
+        <div className="md:w-[83vw]  max-md:w-full ml-32 max-md:ml-0   h-[100vh] absolute top-0 ">
           <Swip audio={audio}
             activeIndex={activeIndex}
             setActiveIndex={setActiveIndex}

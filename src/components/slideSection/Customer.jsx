@@ -2,8 +2,8 @@
 const Customer = () => {
   return (
     <>
-      <div className=" h-[100vh] w-full ">
-        <div className="text-left text-white mr-[18%]  mt-[12%] md:max-lg:mt-[22%] max-sm:mt-[50%]">
+      <div className=" h-[100vh] w-full flex items-center ">
+        <div className="text-left text-white   max-md:mt-24 max-md:pl-9 md:mt-24 w-full h-[70%] lg:ml-36 ">
           <h3 className="text-xl">Customer service</h3>
           <h2 className="text-4xl mt-4 ">CUSTOMER</h2>
           <p className="mr-12 text-stone-300 mt-4 max-sm:mt-2">

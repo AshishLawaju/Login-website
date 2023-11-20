@@ -39,8 +39,12 @@ body {
   object-fit: cover;
 }
 
-.swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets{
-}
+
+  .swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets{
+    position: absolute;
+    right: 1rem;
+  }
+
 
 .swiper-button-next:after{
   display: none;

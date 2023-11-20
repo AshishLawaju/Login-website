@@ -112,7 +112,7 @@ export default function App({audio}) {
 
   return (
     <>
-      <main className="  h-[100vh]">
+      <main className="  h-[100vh] w-full">
         <section>
           {/* <div style={{backgroundImage:`url(${backg})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}} className="w-full h-[100vh] bg-gradient-to-r from-purple-500 to-pink-500 opacity-90">This is div</div> */}
 
