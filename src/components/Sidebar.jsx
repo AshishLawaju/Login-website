@@ -5,7 +5,7 @@ export default function Sidebar({ audio,activeIndex, setActiveIndex }) {
   return (
     <nav className="sidebar  ">
       <div className="">
-        <div className="mt-48 ml-12 max-md:hidden  ">
+        <div className="mt-[18vh] ml-12 max-md:hidden  ">
           <ul className="text-slate-400  p-6 flex flex-col gap-6 w-12 border border-slate-300 items-center justify-center rounded-full">
             <li className=" items-center  ">
               <div

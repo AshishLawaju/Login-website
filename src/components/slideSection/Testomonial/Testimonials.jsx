@@ -18,25 +18,33 @@ const Testimonials = () => {
       <h1 className="text-white text-4xl font-bold">Testimonials</h1>
 
       <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        loop={true}
-        
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        spaceBetween={70}
-        coverflowEffect={{
-          rotate: 10,
-          stretch: 12,
-          depth: 100,
-          modifier: 1,
-          slideShadows: false,
+      //   effect={"coverflowEffect"}
+      //   grabCursor={true}
+       
+      //   pagination={true}
+      //   centeredSlides={true}
+      //   slidesPerView={"auto"}
+      //   spaceBetween={70}
+      //   coverflowEffect={{
+      //     rotate: 10,
+      //     stretch: 12,
+      //     depth: 100,
+      //     modifier: 1,
+      //     slideShadows: false,
           
-        }}
-        initialSlide={1}
+      //   }
+
+      // }
+      //  loop={true}
+      slidesPerView={3}
+      spaceBetween={30}
+      pagination={{
+        clickable: true,
+      }}
+      loop={true}
         
-        
-        pagination={false}
+          
+
         modules={[Pagination, EffectCoverflow]}
         className="mySwiper1  "
       >

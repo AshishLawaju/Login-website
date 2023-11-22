@@ -5,7 +5,7 @@ const Card = ({name,review,profile}) => {
 
 
   return (
-    <div className="w-[290px] h-[280px] text-white     flex flex-col  items-center z-50  bg-black/70 rounded-xl  ">
+    <div className="w-[290px] h-[300px] text-white     flex flex-col  items-center z-50  bg-black/70 rounded-xl  ">
       <div className="w-[100px] h-[100px]  ">
         <img
           src={profile}
@@ -25,6 +25,8 @@ const Card = ({name,review,profile}) => {
       <p className="text-xs p-4 text-slate-400">
      {review}
       </p>
+
+      <div>⭐⭐⭐⭐⭐</div>
     </div>
   );
 };

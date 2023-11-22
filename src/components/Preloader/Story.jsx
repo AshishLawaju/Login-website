@@ -53,6 +53,7 @@ export default function Story() {
                     strings={[" Everyone has story to tell,"]}
                     typeSpeed={20}
                     cursorChar=""
+                    className="text-2xl"
                   />
                 </div>
                 <div className="h-[25vh] w-[50vw] mt-6 max-sm:text-sm">
@@ -75,13 +76,14 @@ export default function Story() {
                     cursorChar=""
                     typeSpeed={50}
                     startDelay={2000}
+                    className="text-xl"
                   ></Typed>
                 </div>
                 <motion.div  initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{}}
                     transition={{ delay: 3 }} className="max-sm:mt-44 flex gap-12">
-                  <p>-------------------</p>
+                  <p>_______________</p>
 
                   <button
                    

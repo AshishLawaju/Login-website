@@ -18,13 +18,13 @@ export default function AskAudio() {
         <div className="relative text-white bg-black w-full h-[100vh]">
           <div className="relative  h-[100vh] w-[80vw]   pl-36 max-sm:pl-10 flex  items-center">
             <div className="  h-[150px] grid  ">
-              <div className="capitalize text-2xl">Hello, welcome to webX !</div>
-              <div className="text-md">
+              <div className="capitalize text-3xl">Hello, welcome to webX !</div>
+              <div className="text-xl">
                 Would you like to experience website with sound ?
               </div>
 
               <div className="flex items-center gap-8">
-                <p>------------------</p>
+                <p>________________</p>
                 <button
                   onClick={() => {
                     setAudio(true);

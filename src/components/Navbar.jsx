@@ -26,7 +26,7 @@ export default function Navbar() {
           onClick={() => navigate("/ourteam")}
           className="border-2 z-50 border-[#ffffff] rounded-full cursor-pointer text-white  py-2 px-5 hover:text-[#ffffff75] hover:border-[#ffffff75] text-md leading-normal mt-5 mb-5 mr-12  max-sm:max-md:hidden"
         >
-          Our Team
+          Our Work
         </button>
       </div>
 
@@ -58,9 +58,9 @@ export default function Navbar() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -1000, opacity: 0 }}
             transition={{ duration: "0.2", ease: "easeInOut" }}
-            className="h-[70vh] w-full bg-black/95 absolute top-0 z-50  p-5"
+            className=" w-full bg-black/95 absolute top-0 z-50  p-5"
           >
-            <div className="flex justify-between">
+            <div className="flex justify-between ">
               <button>
                 {" "}
                 <img src={Logo} alt="logo" width={120} />{" "}

@@ -68,7 +68,7 @@ export default function Page1() {
                 transition={{ duration: 1, ease: "backInOut" }}
                 className="text-5xl"
               >
-                LOGO
+                CREATIVITY
               </motion.div>
             )}
             {show2 && (
@@ -80,7 +80,7 @@ export default function Page1() {
                 transition={{ duration: 1, ease: "backInOut" }}
                 className="text-5xl"
               >
-                GRAPHIC
+                UI/UX
               </motion.div>
             )}
             {show3 && (
@@ -104,7 +104,7 @@ export default function Page1() {
                 transition={{ duration: 1, ease: "backInOut" }}
                 className="text-5xl"
               >
-                MOBILE APPLICATION
+                SOFTWARE
               </motion.div>
             )}
             {show5 && (
@@ -116,7 +116,7 @@ export default function Page1() {
                 transition={{ duration: 1, ease: "backInOut" }}
                 className="text-5xl"
               >
-                CREATIVITY
+                INNOVATION
               </motion.div>
             )}
             {show6 && (
