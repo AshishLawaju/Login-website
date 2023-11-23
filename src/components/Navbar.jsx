@@ -23,7 +23,7 @@ export default function Navbar() {
         </button>
 
         <button
-          onClick={() => navigate("/ourteam")}
+          onClick={() => navigate("/ourwork")}
           className="border-2 z-50 border-[#ffffff] rounded-full cursor-pointer text-white  py-2 px-5 hover:text-[#ffffff75] hover:border-[#ffffff75] text-md leading-normal mt-5 mb-5 mr-12  max-sm:max-md:hidden"
         >
           Our Work
@@ -75,8 +75,8 @@ export default function Navbar() {
             </div>
 
             <div className="text-white mt-10 ">
-              <button className="border-2 rounded-3xl px-5  py-2">
-                Our Team
+              <button className="border-2 rounded-3xl px-5  py-2" onClick={()=>navigate("/ourwork")}>
+                Our Work
               </button>
               <div className="mt-4 p-4">
                 <ul className="flex flex-col gap-8 ">

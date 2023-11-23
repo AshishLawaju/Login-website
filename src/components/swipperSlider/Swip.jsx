@@ -57,6 +57,8 @@ export default function Swip({ audio, activeIndex, setActiveIndex }) {
         speed={1000}
         effect={EffectFade}
         loopPreventsSliding={true}
+        
+        
         // scrollbar={{ draggable: true }}
 
         modules={[
@@ -69,7 +71,7 @@ export default function Swip({ audio, activeIndex, setActiveIndex }) {
         ]}
         className="mySwiper w-full relative"
       >
-        <SwiperSlide id="home" className="relative z-0">
+        <SwiperSlide id="home" className="relative z-0" >
           <section className="text-white delay-1000 ">
             <div className=" w-full h-[100vh] place-content-center  flex items-center max-sm:mr-20 ">
               <div className=" p-16 sm:p-10 max-sm:p-6">
@@ -91,7 +93,7 @@ export default function Swip({ audio, activeIndex, setActiveIndex }) {
 
                 <div className="w-[75%] text-center  ">
 
-                <p className="text-xl  text-slate-300 mt-4 max-sm:text-start">
+                <p className="text-xl  text-slate-300 mt-4 max-md:text-base max-md:text-justify">
                   We are designers, developers, creators and much more. What we
                   develop is extraordinary because we can't stand ordinary.
                   Don't believe yet? Then try us and amuse yourselves.

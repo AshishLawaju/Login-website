@@ -58,17 +58,21 @@ const Customer = () => {
         <div className="w-full h-[100vh]  text-white flex items-center justify-around text-base">
           <div className="h-[55vh] ">
             <div className="flex flex-col   gap-16 ">
-              <div className="text-start flex flex-col gap-4">
-                <div className="text-2xl ">Customer Service </div>
-                <div className="uppercase text-4xl ">Email us</div>
+              <div className="text-start flex flex-col gap-4 max-sm:hidden ">
+                <div className="text-2xl max-md:text-sm ">
+                  Customer Service{" "}
+                </div>
+                <div className="uppercase text-4xl max-md:text-sm">
+                  Email us
+                </div>
               </div>
 
               <div>
                 <button
                   onClick={() => setContactPage(false)}
-                  className="border-2 px-5 py-2 rounded-3xl flex items-start"
+                  className="border-2 px-5 py-2 rounded-3xl flex items-start max-md:text-xs max-md:p-1"
                 >
-                  Information
+                  Go Back
                 </button>
               </div>
             </div>
@@ -84,7 +88,7 @@ const Customer = () => {
               ></input>
               <label>Email</label>
               <input
-                type="text"
+                type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="bg-transparent pb-1 pt-2 px-3 border border-x-0 border-t-0 focus:outline-none"
@@ -102,7 +106,7 @@ const Customer = () => {
                 type="text"
                 value={messages}
                 onChange={(e) => setMessages(e.target.value)}
-                className="bg-transparent border h-[12vh] rounded-md"
+                className="bg-transparent border h-[12vh] outline-none rounded-md"
               ></textarea>
               <ReCAPTCHA
                 sitekey="6LcoNRgpAAAAAHUQzMIRUxlRbuhhDc6V990-haRI"
@@ -112,7 +116,7 @@ const Customer = () => {
               <button
                 disabled={!capVal}
                 onClick={handleSubmit}
-                className="px-5 py-2 rounded-full bg-[#FF1A75]  hover:bg-red-500"
+                className="px-5 py-2 rounded-full bg-[#FF1A75]  hover:bg-red-500 hover:cursor-pointer"
               >
                 Send
               </button>

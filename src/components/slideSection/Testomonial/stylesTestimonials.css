@@ -38,3 +38,24 @@ body {
   border: none;
   background-color: none;
 } */
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizonta{
+  
+  
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.swiper-pagination-bullet-active{
+  background: white;
+}
+
+
+@media (max-width:900px ){
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizonta{
+
+margin-top: 10rem;
+}}

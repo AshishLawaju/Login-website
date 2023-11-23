@@ -13,30 +13,26 @@ export default function Services() {
         logo={uiux}
         title={"UI/UX DESIGN"}
         info={
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
-        }
+"UI stands for User Interface while UX stands for User Experience. UI is the look and feel of a product, while UX is how a product feels to use. Both UI and UX are important for creating a successful product. A good UI should be visually appealing and easy to use. A good UX should be intuitive and make it easy for users to complete their tasks. Both UI and UX should be designed with the user in mind. "        }
         className=" "
       />
       <ServiceCard
         logo={webdevelopment}
         title={"WEB DEVELOPMENT"}
         info={
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
-        }
+"Web development is involved in developing a website for the Internet or an intranet .It can range from developing a simple single static page  to complex web applications . A more comprehensive tasks to which Web development commonly refers,  include Web engineering, Web design, Web content development, client liaison,  Web server and network security configuration, and e-commerce development."        }
       />
       <ServiceCard
         logo={webapplication}
         title={"WEB APPLICATION"}
         info={
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
-        }
+"A web application is a web-based software application that runs on a web server.  Web applications can be used to build a wide variety of applications, from simple one-page websites to complex enterprise applications. Web applications are commonly used for a variety of purposes, including e-commerce, social networking, and online gaming.  "        }
       />
       <ServiceCard
         logo={outsource}
         title={"OUT SOURCE"}
         info={
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
-        }
+"Outsourcing is a business practice in which a company contracts with a third-party provider to perform services or create goods that were traditionally performed in-house by the company's own employees and staff.  This shift often occurs in an attempt to lower costs, access specialized expertise, enhance efficiency, and improve flexibility."        }
       />
     </div>
   );

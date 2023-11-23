@@ -2,7 +2,7 @@
 export default function ServiceCard({ logo, title, info }) {
   return (
     <>
-      <div className="max-lg:hidden bg-black/70 text-white rounded-lg   border border-black hover:border-blue-700 hover:border-2 hover:rounded-sm flex flex-col max-md:flex-row   ">
+      <div className="max-lg:hidden bg-black/70 text-white rounded-lg   border border-black hover:border-blue-800 hover:border-2 hover:rounded-sm flex flex-col max-md:flex-row   ">
         <div className="grid place-content-center p-1   h-[52%]">
           <img src={logo} alt="logo"></img>
         </div>

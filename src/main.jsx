@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter, Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
-import OurTeam from "./components/ourTeam/swiper/OurTeam.jsx";
-import First from "./components/Preloader/First.jsx";
 import AskAudio from "./components/Preloader/AskAudio.jsx";
+import OurWork from "./components/ourWork/OurWork.jsx";
+import App from "./App.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -13,8 +13,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
       <Routes>
         <Route path="/" element={<AskAudio/>}></Route>
-        <Route path="home" element={<First />}> </Route>
-        <Route path="/ourteam" element={<OurTeam/>}></Route>
+        <Route path="home" element={<App />}> </Route>
+        <Route path="/ourwork" element={<OurWork/>}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

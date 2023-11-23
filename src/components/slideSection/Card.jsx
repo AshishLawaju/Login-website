@@ -1,12 +1,9 @@
 /* eslint-disable react/prop-types */
 
-
-const Card = ({name,review,profile}) => {
-
-
+const Card = ({ name, review, profile }) => {
   return (
-    <div className="w-[290px] h-[300px] text-white     flex flex-col  items-center z-50  bg-black/70 rounded-xl  ">
-      <div className="w-[100px] h-[100px]  ">
+    <div className="w-18 h-[18.75rem]  text-white     flex flex-col  items-center z-50  bg-black/70 rounded-xl  ">
+      <div className="w-[30%] h-[30%]  max-xl:w-20 max-xl:h-20 ">
         <img
           src={profile}
           alt="profile"
@@ -21,10 +18,8 @@ const Card = ({name,review,profile}) => {
         Yesterday some of my customers messaged sayinng how much I liked the new
         site. Thanks guys!"
       </p> */}
-      <h2 className="text-2xl mt-8">{name}</h2>
-      <p className="text-xs p-4 text-slate-400">
-     {review}
-      </p>
+      <h2 className="text-2xl mt-8 max-lg:text-xl">{name}</h2>
+      <p className="text-xs p-4 text-slate-400 max-md:z">{review}</p>
 
       <div>⭐⭐⭐⭐⭐</div>
     </div>

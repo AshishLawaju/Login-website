@@ -82,7 +82,7 @@ export default function Story() {
                 <motion.div  initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{}}
-                    transition={{ delay: 3 }} className="max-sm:mt-44 flex gap-12">
+                    transition={{ delay: 3 }} className="max-sm:mt-44 lg:mt-12 flex gap-12">
                   <p>_______________</p>
 
                   <button
