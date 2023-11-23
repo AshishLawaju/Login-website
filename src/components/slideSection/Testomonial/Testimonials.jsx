@@ -17,16 +17,13 @@ const Testimonials = () => {
 
   useEffect(() => {
     if (window.innerWidth > 1280) {
-      console.log(">1280");
       setSlide(3);
     } else if (window.innerWidth > 680) {
-      console.log(">680");
       setSlide(2);
     } else {
-      console.log("very less");
       setSlide(1);
     }
-  }, [innerWidth]);
+  }, [window.innerWidth]);
 
   return (
     <div className="flex flex-col relative  border-white items-center justify-center w-[80%] h-[70vh] gap-1 ">

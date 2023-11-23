@@ -29,8 +29,8 @@ export default function Story() {
     setTimeout(() => {
       setStory(false);
       setFirst(true);
-      speech.paused();
-      typing.paused();
+      
+     
     }, 40000);
   },[]);
 
