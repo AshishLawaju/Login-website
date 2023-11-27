@@ -80,7 +80,7 @@ export default function Swip({ audio, activeIndex, setActiveIndex }) {
                   reality. "
                 </h1>
 
-                <p className="text-xl text-center mt-4">- WELCOME TO LOGIN</p>
+                <p className="text-xl text-center mt-4">- WELCOME TO WebX</p>
               </div>
             </div>
           </section>
