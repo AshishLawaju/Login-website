@@ -4,7 +4,7 @@ import "./index.css";
 import { BrowserRouter, Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 import AskAudio from "./components/Preloader/AskAudio.jsx";
-import OurWork from "./components/ourWork/OurWork.jsx";
+import OurWork from "./components/ourWork/OurWork/OurWork.jsx";
 import App from "./App.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
